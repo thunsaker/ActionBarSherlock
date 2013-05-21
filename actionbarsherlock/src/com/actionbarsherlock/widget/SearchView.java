@@ -577,6 +577,15 @@ public class SearchView extends LinearLayout implements CollapsibleActionView {
     }
 
     /**
+     * Sets the selectAllOnFocus property of the textView
+     *
+     * @param set whether or not to select all on focus
+     */
+    public void setSelectAllOnFocus(boolean selectAllOnFocus) {
+        mQueryTextView.setSelectAllOnFocus(selectAllOnFocus);
+    }
+
+    /**
      * Sets the default or resting state of the search field. If true, a single search icon is
      * shown by default and expands to show the text field and other buttons when pressed. Also,
      * if the default state is iconified, then it collapses to that state when the close button
